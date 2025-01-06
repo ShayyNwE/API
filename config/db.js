@@ -1,17 +1,18 @@
 const { Sequelize } = require('sequelize');
 
-const sequelize = new Sequelize('gestion_produits', 'root', 'password', {
+// Créer une connexion à la base de données MySQL sous XAMPP
+const sequelize = new Sequelize('gestion_produits', 'root', '', {
   host: 'localhost',
+  dialect: 'mysql',
   port: 3306,
-  dialect: 'mysql'
 });
 
 sequelize.authenticate()
   .then(() => {
-    console.log('Connexion à la base de données réussie !');
+    console.log('Connexion à la base de données réussie!');
   })
-  .catch(err => {
-    console.error('Impossible de se connecter à la base de données :', err);
+  .catch((err) => {
+    console.error('Impossible de se connecter à la base de données:', err);
   });
 
 module.exports = sequelize;

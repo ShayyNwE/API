@@ -13,7 +13,7 @@ app.use('/api/products', productRoutes);
 
 // Synchronisation de la base de données et démarrage du serveur
 sequelize.sync().then(() => {
-  app.listen(5000, () => {
+  app.listen(3306, () => {
     console.log('Serveur démarré sur le port 5000');
   });
 });
