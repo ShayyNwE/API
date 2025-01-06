@@ -1,0 +1,27 @@
+# Node modules
+node_modules/
+
+# Logs
+*.log
+*.log.*
+
+# Dossier de la base de données (Si tu utilises SQLite par exemple)
+*.sqlite
+*.sqlite3
+
+# Dossier temporaire de test
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Fichiers d'environnement
+.env
+
+# Dossier de configuration d'IDE (par exemple VSCode)
+.vscode/
+
+# MacOS specific files
+.DS_Store
+
+# Fichiers générés par le système
+Thumbs.db
